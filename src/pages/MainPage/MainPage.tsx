@@ -1,0 +1,30 @@
+import React, {FC} from 'react';
+import styles from './MainPage.module.scss';
+import Grid from "@mui/material/Unstable_Grid2";
+import CareerProfileBox from "../../components/CareerProfileBox/CareerProfileBox";
+import CompanyData from "../../components/CompanyData/CompanyData";
+import {ScopedCssBaseline, useTheme} from "@mui/material";
+import {styled} from "@mui/material/styles";
+import Paper from "@mui/material/Paper";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import AvailabilityPage from "../AvailabilityPage/AvailabilityPage";
+
+interface MainPageProps {
+}
+
+const Item = styled(Paper)(({theme}) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+}));
+
+const MainPage: FC<MainPageProps> = () => {
+        return (
+            <AvailabilityPage />
+        )
+    }
+;
+
+export default MainPage;
