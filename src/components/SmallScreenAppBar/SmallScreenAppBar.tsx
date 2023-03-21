@@ -51,7 +51,7 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
 
                 </IconButton>
             </Toolbar>
-            <img src={"banner_small.png"} />
+            <img src={process.env.PUBLIC_URL + "/banner_small.png"} />
         </AppBar>)
     ;
 }

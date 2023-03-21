@@ -31,7 +31,7 @@ const LargeScreenAppBar: FC<LargeScreenAppBarProps> = () => (
 
                 </IconButton>
             </Toolbar>
-            <img src={"banner_large.png"} />
+            <img src={process.env.PUBLIC_URL + "/banner_large.png"} />
         </AppBar>
     </Box>
 );

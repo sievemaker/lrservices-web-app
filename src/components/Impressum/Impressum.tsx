@@ -67,7 +67,7 @@ const Impressum: FC<ImpressumProps> = () => {
                     <Typography variant="body1" color="text.secondary">
                         <Button
                             onClick={() => {
-                                fetch('cv.pdf').then(response => {
+                                fetch(process.env.PUBLIC_URL + '/cv.pdf').then(response => {
                                     response.blob().then(blob => saveAs(blob, "Lukasz-Rzeszotarski-Resume.pdf"))
                                 })
                             }}
