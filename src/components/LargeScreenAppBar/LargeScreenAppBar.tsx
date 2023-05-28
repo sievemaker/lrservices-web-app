@@ -22,13 +22,7 @@ const LargeScreenAppBar: FC<LargeScreenAppBarProps> = () => (
                     aria-label="menu"
                     sx={{mr: 2}}
                 >
-                    <BusinessIcon />
-                    <Button component={RouterLink} to="/" variant="contained" disableElevation>
-                        <Typography variant="body2">
-                            LR Services
-                        </Typography>
-                    </Button>
-
+                    <img src={process.env.PUBLIC_URL + "/favicon.ico"} width="80%"/>
                 </IconButton>
             </Toolbar>
             <img src={process.env.PUBLIC_URL + "/banner_large.png"} />

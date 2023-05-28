@@ -38,7 +38,7 @@ const MySnackBar: FC<MySnackBarProps> = () => {
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="info" sx={{width: '100%'}}>
                     <Typography variant="body1">
-                        The best way to contact with us is sending an email <Button variant="contained" href="mailto:09quiz-papayas@icloud.com" endIcon={<SendIcon/>}>
+                        The best way to contact with us is sending an email <Button variant="contained" href="lukasz.rzeszotarski.services@outlook.com" endIcon={<SendIcon/>}>
                         Send Email
                     </Button>
                     </Typography>

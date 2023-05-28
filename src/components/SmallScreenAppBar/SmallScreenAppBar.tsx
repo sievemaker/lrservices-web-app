@@ -42,13 +42,7 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
                     sx={{mr: 2}}
                     onClick={handleOpenUserMenu}
                 >
-                    <MenuIcon/>
-                    <Button component={RouterLink} to="/" variant="contained" disableElevation>
-                        <Typography variant="body2">
-                            LR Services
-                        </Typography>
-                    </Button>
-
+                    <img src={process.env.PUBLIC_URL + "/favicon.ico"} width="70%"/>
                 </IconButton>
             </Toolbar>
             <img src={process.env.PUBLIC_URL + "/banner_small.png"} />
