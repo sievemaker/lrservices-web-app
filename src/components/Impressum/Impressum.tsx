@@ -51,7 +51,7 @@ const Impressum: FC<ImpressumProps> = () => {
             <ItemGrid item xs={5}>
                 <Item>
                     <Typography variant="body1" color="text.secondary">
-                        <Button variant="contained" href="mailto:09quiz-papayas@icloud.com" endIcon={<SendIcon/>}>
+                        <Button variant="contained" href="mailto:lukasz.rzeszotarski.services@outlook.com" endIcon={<SendIcon/>}>
                             Send Email
                         </Button>
                     </Typography>
