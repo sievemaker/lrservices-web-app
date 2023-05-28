@@ -6,6 +6,7 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert, {AlertProps} from '@mui/material/Alert';
 import Typography from "@mui/material/Typography";
 import SendIcon from "@mui/icons-material/Send";
+import {AlertTitle} from "@mui/lab";
 
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
     props,
@@ -34,14 +35,14 @@ const MySnackBar: FC<MySnackBarProps> = () => {
     return (
         <Stack spacing={2} sx={{width: '100%'}}>
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-                <Alert onClose={handleClose} severity="info" sx={{width: '100%'}}>
+                <Alert onClose={handleClose} severity="info" sx={{width: '100%'}}
+                       action={
+                           <Button variant="contained" href="mailto:lukasz.rzeszotarski.services@outlook.com" endIcon={<SendIcon/>}>
+                               Send Email
+                           </Button>
+                       }>
                     <Typography variant="body1">
                         The best way to contact with us is sending an email
-                    </Typography>
-                    <Typography>
-                        <Button variant="contained" href="mailto:lukasz.rzeszotarski.services@outlook.com" endIcon={<SendIcon/>}>
-                            Send Email
-                        </Button>
                     </Typography>
                 </Alert>
             </Snackbar>
