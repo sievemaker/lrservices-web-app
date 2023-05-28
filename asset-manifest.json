@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lrservices-web-app/static/css/main.073c9b0a.css",
-    "main.js": "/lrservices-web-app/static/js/main.f52b335e.js",
+    "main.js": "/lrservices-web-app/static/js/main.c7003017.js",
     "static/js/787.dbc30ae6.chunk.js": "/lrservices-web-app/static/js/787.dbc30ae6.chunk.js",
     "index.html": "/lrservices-web-app/index.html",
     "main.073c9b0a.css.map": "/lrservices-web-app/static/css/main.073c9b0a.css.map",
-    "main.f52b335e.js.map": "/lrservices-web-app/static/js/main.f52b335e.js.map",
+    "main.c7003017.js.map": "/lrservices-web-app/static/js/main.c7003017.js.map",
     "787.dbc30ae6.chunk.js.map": "/lrservices-web-app/static/js/787.dbc30ae6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.f52b335e.js"
+    "static/js/main.c7003017.js"
   ]
 }
