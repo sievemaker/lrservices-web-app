@@ -44,6 +44,11 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
                 >
                     <img src={process.env.PUBLIC_URL + "/favicon.ico"} width="70%"/>
                 </IconButton>
+                <Button component={RouterLink} to="/" variant="contained" disableElevation>
+                    <Typography variant="caption">
+                        Freelance Development Company
+                    </Typography>
+                </Button>
             </Toolbar>
             <img src={process.env.PUBLIC_URL + "/banner_small.png"} />
         </AppBar>)
