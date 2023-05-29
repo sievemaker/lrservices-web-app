@@ -26,7 +26,7 @@ const LargeScreenAppBar: FC<LargeScreenAppBarProps> = () => (
                 </IconButton>
                 <Button component={RouterLink} to="/" variant="contained" disableElevation>
                     <Typography variant="subtitle1">
-                        Freelance Development Company
+                        Freelance Development
                     </Typography>
                 </Button>
             </Toolbar>
