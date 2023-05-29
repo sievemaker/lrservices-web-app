@@ -25,8 +25,8 @@ const LargeScreenAppBar: FC<LargeScreenAppBarProps> = () => (
                     <img src={process.env.PUBLIC_URL + "/favicon.ico"} width="80%"/>
                 </IconButton>
                 <Button component={RouterLink} to="/" variant="contained" disableElevation>
-                    <Typography variant="subtitle1">
-                        Freelance Development
+                    <Typography variant="caption">
+                        Freelance Development Business
                     </Typography>
                 </Button>
             </Toolbar>

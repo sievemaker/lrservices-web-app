@@ -46,7 +46,7 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
                 </IconButton>
                 <Button component={RouterLink} to="/" variant="contained" disableElevation>
                     <Typography variant="caption">
-                        Freelance Development
+                        Freelance Development Business
                     </Typography>
                 </Button>
             </Toolbar>
