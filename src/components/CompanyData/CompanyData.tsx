@@ -21,9 +21,6 @@ const CompanyData: FC<CompanyDataProps> = () => {
     return(    <ItemCard>
             <CardContent>
                 <Impressum />
-                <Typography>
-                    <Technology />
-                </Typography>
             </CardContent>
         </ItemCard>
     );

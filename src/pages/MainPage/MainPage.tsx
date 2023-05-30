@@ -1,13 +1,7 @@
 import React, {FC} from 'react';
-import styles from './MainPage.module.scss';
-import Grid from "@mui/material/Unstable_Grid2";
-import CareerProfileBox from "../../components/CareerProfileBox/CareerProfileBox";
-import CompanyData from "../../components/CompanyData/CompanyData";
-import {ScopedCssBaseline, useTheme} from "@mui/material";
 import {styled} from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import AvailabilityPage from "../AvailabilityPage/AvailabilityPage";
+import TechnologyPage from "../TechnologyPage/TechnologyPage";
 
 interface MainPageProps {
 }
@@ -22,7 +16,7 @@ const Item = styled(Paper)(({theme}) => ({
 
 const MainPage: FC<MainPageProps> = () => {
         return (
-            <AvailabilityPage />
+            <TechnologyPage />
         )
     }
 ;
