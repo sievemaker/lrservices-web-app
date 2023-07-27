@@ -1,12 +1,10 @@
 import React, {FC} from 'react';
-import styles from './MySnackBar.module.scss';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert, {AlertProps} from '@mui/material/Alert';
 import Typography from "@mui/material/Typography";
 import SendIcon from "@mui/icons-material/Send";
-import {AlertTitle} from "@mui/lab";
 
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
     props,
@@ -20,10 +18,6 @@ interface MySnackBarProps {
 
 const MySnackBar: FC<MySnackBarProps> = () => {
     const [open, setOpen] = React.useState(true);
-
-    const handleClick = () => {
-        setOpen(true);
-    };
 
     const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
         if (reason === 'clickaway') {

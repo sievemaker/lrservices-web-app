@@ -1,16 +1,6 @@
 import React, {FC} from 'react';
 import {CardContent, Chip, Typography} from "@mui/material";
 import BusinessIcon from "@mui/icons-material/Business";
-import {TwitterTimelineEmbed} from "react-twitter-embed";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import Avatar from "@mui/material/Avatar";
-import IconButton from "@mui/material/IconButton";
-import CardActions from "@mui/material/CardActions";
-import ShareIcon from "@mui/icons-material/Share";
-import Button from '@mui/material/Button';
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import {saveAs} from "file-saver";
 
 interface TechnologyProps {
 }

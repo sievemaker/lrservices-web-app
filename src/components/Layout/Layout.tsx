@@ -1,11 +1,9 @@
 import React, { FC } from 'react';
-import styles from './Layout.module.scss';
 import AppBarComponent from "../AppBarComponent/AppBarComponent";
 import {Outlet} from "react-router-dom";
-import {Snackbar, useTheme} from "@mui/material";
+import {useTheme} from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Grid from "@mui/material/Unstable_Grid2";
-import CareerProfileBox from "../CareerProfileBox/CareerProfileBox";
 import CompanyData from "../CompanyData/CompanyData";
 import {styled} from "@mui/material/styles";
 import Paper from "@mui/material/Paper";

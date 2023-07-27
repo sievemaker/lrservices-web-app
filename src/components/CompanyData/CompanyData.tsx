@@ -1,8 +1,5 @@
 import React, { FC } from 'react';
-import styles from './CompanyData.module.scss';
-import {Card, CardContent, Typography} from "@mui/material";
-import BusinessIcon from "@mui/icons-material/Business";
-import Technology from "../Technology/Technology";
+import {Card, CardContent} from "@mui/material";
 import Impressum from "../Impressum/Impressum";
 import {styled} from "@mui/material/styles";
 
