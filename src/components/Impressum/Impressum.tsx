@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styles from './Impressum.module.scss';
 import {Grid, Link, Typography} from "@mui/material";
 import BusinessIcon from "@mui/icons-material/Business";
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import SendIcon from "@mui/icons-material/Send";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
@@ -32,36 +33,34 @@ const Impressum: FC<ImpressumProps> = () => {
     }));
     return (<div className={styles.Impressum} data-testid="Impressum">
         <Typography gutterBottom variant="h5" component="div">
-            <BusinessIcon/> COMPANY DATA
+            <ConnectWithoutContactIcon/> KONTAKT
         </Typography>
-        <Grid container spacing={2}>
-            <ItemGrid item xs={7}>
+        <Grid container spacing={1}>
+            <ItemGrid item xs={14}>
                 <Item>
-                    <Typography variant="body1" color="text.secondary">
-                        Łukasz Rzeszotarski Services
+                    <Typography variant="body1" color="text.primary">
+                        Lukasz Rzeszotarski Services
                     </Typography>
                     <Typography variant="body1" color="text.secondary">
-                        LR Services
+                        USt-IdNr. PL9562082060
                     </Typography>
                     <Typography variant="body1" color="text.secondary">
-                        VAT-Id: PL9562082060
+                        +48 795 710 483
                     </Typography>
-                </Item>
-            </ItemGrid>
-            <ItemGrid item xs={5}>
-                <Item>
-                    <Typography variant="body1" color="text.secondary">
-                        <Button variant="contained" href="mailto:lukasz.rzeszotarski.services@outlook.com" endIcon={<SendIcon/>}>
-                            Send Email
-                        </Button>
-                    </Typography>
-                </Item>
-                <Item>
-                    <Typography variant="body1" color="text.secondary">
-                        <Button variant="contained" href="https://aplikacja.ceidg.gov.pl/ceidg/ceidg.public.ui/SearchDetails.aspx?Id=04dc73f8-13c9-45fb-8656-ed4690054b8b" endIcon={<BusinessIcon/>}>
-                            Impressum
-                        </Button>
-                    </Typography>
+                    <Item>
+                        <Typography variant="body1" color="text.secondary">
+                            <Button variant="contained" href="mailto:lukasz.rzeszotarski.services@outlook.com" endIcon={<SendIcon/>}>
+                                E-Mail Senden
+                            </Button>
+                        </Typography>
+                    </Item>
+                    <Item>
+                        <Typography variant="body1" color="text.secondary">
+                            <Button variant="outlined" target="_blank" href="https://aplikacja.ceidg.gov.pl/ceidg/ceidg.public.ui/SearchDetails.aspx?Id=04dc73f8-13c9-45fb-8656-ed4690054b8b" endIcon={<BusinessIcon/>}>
+                                Impressum
+                            </Button>
+                        </Typography>
+                    </Item>
                 </Item>
             </ItemGrid>
         </Grid>

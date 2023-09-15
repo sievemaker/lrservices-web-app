@@ -3,9 +3,31 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Layout from "./components/Layout/Layout";
 import MainPage from "./pages/MainPage/MainPage";
+import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 
 function App() {
+
+    const theme = createTheme({
+        typography: {
+            fontFamily: [
+                '-apple-system',
+                'BlinkMacSystemFont',
+                '"Segoe UI"',
+                'Roboto',
+                '"Helvetica Neue"',
+                'Arial',
+                'sans-serif',
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+                '"Segoe UI Symbol"',
+            ].join(','),
+            fontSize: 16,
+        },
+    });
+
     return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<Layout />}>
@@ -13,6 +35,7 @@ function App() {
                 </Route>
             </Routes>
         </BrowserRouter>
+        </ThemeProvider>
     );
 }
 

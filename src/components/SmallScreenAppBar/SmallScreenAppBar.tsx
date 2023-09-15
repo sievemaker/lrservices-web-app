@@ -32,26 +32,7 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
         setAnchorElUser(null);
     };
     return (
-        <AppBar position="static">
-            <Toolbar>
-                <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    sx={{mr: 2}}
-                    onClick={handleOpenUserMenu}
-                >
-                    <img src={process.env.PUBLIC_URL + "/favicon.ico"} width="70%"/>
-                </IconButton>
-                <Button component={RouterLink} to="/" variant="contained" disableElevation>
-                    <Typography variant="caption">
-                        Freelance Development Business
-                    </Typography>
-                </Button>
-            </Toolbar>
-            <img src={process.env.PUBLIC_URL + "/banner_small.png"} />
-        </AppBar>)
+            <img src={process.env.PUBLIC_URL + "/banner_large.png"} width="80%"/>)
     ;
 }
 

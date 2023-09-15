@@ -36,8 +36,6 @@ const Layout: FC<LayoutProps> = () => {
                 </Item>
             </Grid>
         </Grid>
-        <MySnackBar />
-        <BottomNavigationComponent />
     </div>
 )};
 
