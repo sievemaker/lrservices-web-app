@@ -15,6 +15,7 @@ interface LayoutProps {}
 const Item = styled(Paper)(({theme}) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
+    borderRadius: 30,
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
@@ -26,16 +27,27 @@ const Layout: FC<LayoutProps> = () => {
     return (
     <div className="App">
         <AppBarComponent isLargeScreen={largeScreen}/>
-        <Grid container spacing={2} direction={largeScreen ? "row" : "column"}>
-            <Grid xs={largeScreen ? 6 : 12}>
+        {largeScreen && <Grid container spacing={2} direction={"row"}>
+            <Grid xs={6}>
                 <Item> <Outlet />
                 </Item>
             </Grid>
-            <Grid xs={largeScreen ? 6 : 12}>
+            <Grid xs={6}>
                 <Item> <CompanyData />
                 </Item>
             </Grid>
-        </Grid>
+        </Grid>}
+        {!largeScreen && <Grid container spacing={2} direction={"column"}>
+            <Grid xs={12}>
+                <Item> <CompanyData />
+                </Item>
+            </Grid>
+            <Grid xs={12}>
+                <Item> <Outlet />
+                </Item>
+            </Grid>
+        </Grid>}
+        <BottomNavigationComponent />
     </div>
 )};
 
