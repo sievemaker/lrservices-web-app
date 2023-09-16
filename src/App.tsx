@@ -8,6 +8,11 @@ import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 function App() {
 
     const theme = createTheme({
+        palette: {
+            primary: {
+                main: '#004D80'
+            },
+        },
         typography: {
             fontFamily: [
                 '-apple-system',
