@@ -50,7 +50,7 @@ const Impressum: FC<ImpressumProps> = () => {
                     </Typography>
                     <Item>
                         <Typography variant="body1" color="text.secondary">
-                            <Button variant="contained" href="tel:004879571ß483" endIcon={<PhoneForwardedIcon/>}>
+                            <Button variant="contained" href="tel:0048795710483" endIcon={<PhoneForwardedIcon/>}>
                                 Anruf
                             </Button>
                         </Typography>
