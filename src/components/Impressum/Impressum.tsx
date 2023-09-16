@@ -10,6 +10,7 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import {saveAs} from "file-saver";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
+import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
 
 interface ImpressumProps {}
 
@@ -47,6 +48,13 @@ const Impressum: FC<ImpressumProps> = () => {
                     <Typography variant="body1" color="text.secondary">
                         +48 795 710 483
                     </Typography>
+                    <Item>
+                        <Typography variant="body1" color="text.secondary">
+                            <Button variant="contained" href="tel:004879571ß483" endIcon={<PhoneForwardedIcon/>}>
+                                Anruf
+                            </Button>
+                        </Typography>
+                    </Item>
                     <Item>
                         <Typography variant="body1" color="text.secondary">
                             <Button variant="contained" href="mailto:lukasz.rzeszotarski.services@outlook.com" endIcon={<SendIcon/>}>
