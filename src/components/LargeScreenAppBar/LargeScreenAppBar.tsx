@@ -1,20 +1,35 @@
-import React, { FC } from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import styles from './LargeScreenAppBar.module.scss';
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import BusinessIcon from "@mui/icons-material/Business";
-import {Button} from "@mui/material";
+import {Button, Fade, Slide} from "@mui/material";
 import {Link as RouterLink} from "react-router-dom";
 import Typography from "@mui/material/Typography";
 
-interface LargeScreenAppBarProps {}
+interface LargeScreenAppBarProps {
 
-const LargeScreenAppBar: FC<LargeScreenAppBarProps> = () => (
-    <Box sx={{flexGrow: 1}}>
-        <img src={process.env.PUBLIC_URL + "/banner_large.png"} width="35%" />
-    </Box>
-);
+}
+
+const LargeScreenAppBar: FC<LargeScreenAppBarProps> = () => {
+    const containerRef = React.useRef<HTMLElement>(null);
+
+    const [isIn, setIsIn] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => setIsIn(true), 100)
+    })
+
+    return (<Box sx={{flexGrow: 1}}>
+        <Box sx={{height: containerRef?.current?.scrollHeight.valueOf(), overflow: 'hidden'}} ref={containerRef}>
+            <Slide in={isIn} timeout={{enter: 1000, exit: 100}}>
+                <img src={process.env.PUBLIC_URL + "/banner_large.png"} width="35%"/>
+            </Slide>
+        </Box>
+    </Box>)
+
+};
 
 export default LargeScreenAppBar;
