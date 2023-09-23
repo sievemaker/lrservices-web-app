@@ -20,8 +20,16 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
     const [isIn, setIsIn] = useState(false)
 
     useEffect(() => {
+        function handleResize() {
+            setIsIn(false);
+            setTimeout(() => setIsIn(true), 100)
+
+        }
+        window.addEventListener('resize', handleResize)
+
         setTimeout(() => setIsIn(true), 100)
-    })
+        return () => document.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <Box sx={{height: containerRef?.current?.scrollHeight.valueOf(), overflow: 'hidden'}} ref={containerRef}>

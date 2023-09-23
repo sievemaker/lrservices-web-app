@@ -19,11 +19,19 @@ const LargeScreenAppBar: FC<LargeScreenAppBarProps> = () => {
     const [isIn, setIsIn] = useState(false)
 
     useEffect(() => {
+        function handleResize() {
+            setIsIn(false);
+            setTimeout(() => setIsIn(true), 100)
+
+        }
+        window.addEventListener('resize', handleResize)
+
         setTimeout(() => setIsIn(true), 100)
-    })
+        return () => document.removeEventListener('resize', handleResize);
+    }, []);
 
     return (<Box sx={{flexGrow: 1}}>
-        <Box sx={{height: containerRef?.current?.scrollHeight.valueOf(), overflow: 'hidden'}} ref={containerRef}>
+        <Box sx={{flexGrow: 1, height: containerRef?.current?.scrollHeight.valueOf()}} ref={containerRef}>
             <Slide in={isIn} timeout={{enter: 1000, exit: 100}}>
                 <img src={process.env.PUBLIC_URL + "/banner_large.png"} width="35%"/>
             </Slide>
