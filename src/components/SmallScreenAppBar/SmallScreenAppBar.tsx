@@ -24,7 +24,7 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
     }, []);
 
     return (
-        <Box sx={{height: containerRef?.current?.scrollHeight.valueOf(), overflow: 'hidden'}} ref={containerRef}>
+        <Box sx={{minHeight: containerRef?.current?.scrollHeight?.valueOf(), overflow: 'hidden'}} ref={containerRef}>
             <Slide in={isIn} timeout={{enter: 1000, exit: 100}}>
             <img src={process.env.PUBLIC_URL + "/banner_large.png"} width="80%"/>
 
