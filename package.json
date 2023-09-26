@@ -1,8 +1,8 @@
 {
-  "name": "cv-app",
+  "name": "lrservices-web-app",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://sievemaker.github.io/lrservices-web-app",
+  "homepage": "http://lr-services/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
