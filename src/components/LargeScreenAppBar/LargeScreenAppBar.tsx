@@ -21,12 +21,12 @@ const LargeScreenAppBar: FC<LargeScreenAppBarProps> = () => {
     useEffect(() => {
         function handleResize() {
             setIsIn(false);
-            setTimeout(() => setIsIn(true), 100)
+            setTimeout(() => setIsIn(true), 300)
 
         }
         window.addEventListener('resize', handleResize)
 
-        setTimeout(() => setIsIn(true), 100)
+        setTimeout(() => setIsIn(true), 300)
         return () => document.removeEventListener('resize', handleResize);
     }, []);
 

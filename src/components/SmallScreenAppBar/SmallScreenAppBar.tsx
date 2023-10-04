@@ -20,7 +20,7 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
     const [isIn, setIsIn] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => setIsIn(true), 100);
+        setTimeout(() => setIsIn(true), 300);
     }, []);
 
     return (
