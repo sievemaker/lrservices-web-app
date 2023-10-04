@@ -12,11 +12,11 @@ const Technology: FC<TechnologyProps> = () => (
             <HubIcon/> Arbeitsweise
         </Typography>
         <Typography gutterBottom variant="body1" component="div">
-            Ich bin bei der Entwicklung von komplexen und hoch verfügbaren Systemen
+            Ich bin bei der Full-Stack-Entwicklung von komplexen und hoch verfügbaren Systemen
             tätig. Zu meinen Aufgaben gehören selbstständige Umsetzung fachlicher und
             technischer Anforderungen, die
             Durchführung von Maßnahmen zur Qualitätssicherung während und nach
-            Abschluss der Entwicklung (Code Review etc.) sowie Anpassungen im Frontend.
+            Abschluss der Entwicklung (Code Review etc.).
         </Typography>
         <Typography gutterBottom variant="body2" component="div">
             <Avatar alt="Lukasz Rzeszotarski" src={avatar} sx={{ width: 56, height: 56, margin: "auto" }} />
@@ -25,7 +25,7 @@ const Technology: FC<TechnologyProps> = () => (
             LUKASZ RZESZOTARSKI
         </Typography>
         <Typography gutterBottom variant="body1" component="div">
-            Freelancer & Full-Stack Entwickler
+            Freelancer & Full-Stack-Entwickler
         </Typography>
     </CardContent>
 );
