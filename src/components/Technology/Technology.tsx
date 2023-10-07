@@ -3,6 +3,7 @@ import {Avatar, CardContent, Chip, Typography} from "@mui/material";
 import HubIcon from '@mui/icons-material/Hub';
 import avatar from "../../public/IMG_1233.jpg"
 import Stack from "@mui/material/Stack";
+import ActiveAvatar from "../ActiveAvatar/ActiveAvatar";
 interface TechnologyProps {
 }
 
@@ -19,7 +20,7 @@ const Technology: FC<TechnologyProps> = () => (
             Abschluss der Entwicklung (Code Review etc.).
         </Typography>
         <Typography gutterBottom variant="body2" component="div">
-            <Avatar alt="Lukasz Rzeszotarski" src={avatar} sx={{ width: 56, height: 56, margin: "auto" }} />
+            <ActiveAvatar />
         </Typography>
         <Typography gutterBottom variant="h6" component="div">
             LUKASZ RZESZOTARSKI
