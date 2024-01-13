@@ -40,7 +40,7 @@ const Impressum: FC<ImpressumProps> = () => {
             <ItemGrid item xs={14}>
                 <Item>
                     <Typography variant="body1" color="text.primary">
-                        Lukasz Rzeszotarski Services
+                        softinnotec Lukasz Rzeszotarski
                     </Typography>
                     <Typography variant="body1" color="text.secondary">
                         USt-IdNr. PL9562082060
