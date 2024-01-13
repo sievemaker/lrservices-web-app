@@ -60,7 +60,7 @@ const Impressum: FC<ImpressumProps> = () => {
                     </Item>
                     <Item>
                         <Typography variant="body1" color="text.secondary">
-                            <Button variant="contained" href="mailto:lukasz.rzeszotarski.services@outlook.com" endIcon={<SendIcon/>}>
+                            <Button variant="contained" href="mailto:softinnotec@outlook.com" endIcon={<SendIcon/>}>
                                 E-Mail Senden
                             </Button>
                         </Typography>
