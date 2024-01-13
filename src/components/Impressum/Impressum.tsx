@@ -46,6 +46,9 @@ const Impressum: FC<ImpressumProps> = () => {
                         USt-IdNr. PL9562082060
                     </Typography>
                     <Typography variant="body1" color="text.secondary">
+                        softinnotec@outlook.com
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary">
                         +48 795 710 483
                     </Typography>
                     <Item>
