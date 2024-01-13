@@ -13,8 +13,8 @@ const Technology: FC<TechnologyProps> = () => (
             <HubIcon/> Arbeitsweise
         </Typography>
         <Typography gutterBottom variant="body1" component="div">
-            Ich bin bei der Full-Stack-Entwicklung von komplexen und hoch verfügbaren Systemen
-            tätig. Zu meinen Aufgaben gehören selbstständige Umsetzung fachlicher und
+            Wir sind bei der Full-Stack-Entwicklung von komplexen und hoch verfügbaren Systemen
+            tätig. Zu unseren Aufgaben gehören selbstständige Umsetzung fachlicher und
             technischer Anforderungen, die
             Durchführung von Maßnahmen zur Qualitätssicherung während und nach
             Abschluss der Entwicklung (Code Review etc.).
@@ -26,7 +26,7 @@ const Technology: FC<TechnologyProps> = () => (
             LUKASZ RZESZOTARSKI
         </Typography>
         <Typography gutterBottom variant="body1" component="div">
-            Freelancer & Full-Stack-Entwickler
+            Firmeninhaber und Full-Stack-Entwickler
         </Typography>
     </CardContent>
 );
