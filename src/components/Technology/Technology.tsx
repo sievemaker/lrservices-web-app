@@ -13,11 +13,7 @@ const Technology: FC<TechnologyProps> = () => (
             <HubIcon/> Arbeitsweise
         </Typography>
         <Typography gutterBottom variant="body1" component="div">
-            Wir sind bei der Full-Stack-Entwicklung von komplexen und hoch verfügbaren Systemen
-            tätig. Zu unseren Aufgaben gehören selbstständige Umsetzung fachlicher und
-            technischer Anforderungen, die
-            Durchführung von Maßnahmen zur Qualitätssicherung während und nach
-            Abschluss der Entwicklung (Code Review etc.).
+            Wir sind ein spezialisiertes Unternehmen in der Full-Stack-Entwicklung von hochkomplexen und hochverfügbaren Systemen. Unser Fokus liegt auf der eigenständigen Umsetzung sowohl fachlicher als auch technischer Anforderungen. Wir garantieren Qualität durch umfassende Maßnahmen zur Qualitätssicherung während des Entwicklungsprozesses sowie im Anschluss, einschließlich Code-Reviews und anderen bewährten Verfahren.
         </Typography>
         <Typography gutterBottom variant="body2" component="div">
             <ActiveAvatar />
