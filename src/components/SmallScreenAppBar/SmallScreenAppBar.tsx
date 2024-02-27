@@ -43,10 +43,17 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <Slide in={isIn} timeout={{enter: 1000, exit: 100}}>
-            <img src={process.env.PUBLIC_URL + "/banner_large.png"} width="80%"/>
+            <Box sx={{
+                flexGrow: 1,
+                minHeight: containerRef?.current?.scrollHeight.valueOf(),
+                background: 'linear-gradient(to right bottom, #000000, #0B0B0B)'
+            }} ref={containerRef}>
 
-            </Slide>
+                <Slide in={isIn} timeout={{enter: 1000, exit: 100}}>
+                    <img src={process.env.PUBLIC_URL + "/banner_large.png"} width="80%"/>
+                </Slide>
+
+            </Box>
         </Box>)
     ;
 }
