@@ -45,7 +45,6 @@ const SmallScreenAppBar: FC<SmallScreenAppBarProps> = () => {
             </AppBar>
             <Box sx={{
                 flexGrow: 1,
-                minHeight: containerRef?.current?.scrollHeight.valueOf(),
                 background: 'linear-gradient(to right bottom, #000000, #0B0B0B)'
             }} ref={containerRef}>
 
